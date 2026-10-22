@@ -37,9 +37,3 @@ El documento también plantea si una solicitud de cancelación puede retirarse a
 | R-08 | Depender de comunicaciones transversales sin significado definido. | Omitir avisos o comunicar un estado aún no reconocido por su modelo responsable. | Acontecimientos, destinatarios y responsable semántico. |
 | R-09 | Asignar escritorio dedicado sin responsabilidad definida. | Asignaciones incompatibles o puesto no liberado. | Quién asigna/controla/libera; H-11. |
 | R-10 | Consumos concurrentes sobre un saldo. | Beneficios duplicados o cálculo incorrecto de horas disponibles. | Reservas simultáneas/exceso; H-12. |
-
-## Insumos para Sesión 4
-
-Por cada vecino, acordar qué hecho/dato se intercambia, qué significa, quién toma la decisión y qué casos de error/temporalidad se aceptan. Preguntas: (1) ¿qué evento compromete o consume horas y cómo se revierten cambios? (2) ¿qué estado económico afecta derechos y con qué plazos? (3) ¿qué condiciones habilitan/restringen/restablecen el ingreso? (4) ¿requieren Tarifas y Precios y Membresías relación directa? (5) ¿hay beneficio de membresía aplicable a eventos? (6) ¿quién asigna/libera escritorios? (7) ¿qué comunicaciones se emiten, a quién y quién define su verdad?
-
-Resolver con ejemplos, actores responsables, condiciones, lenguaje y modelo dueño; volver a valorar DD-02/03 si aparece independencia interna. No elegir todavía ACL, Customer/Supplier, OHS ni otro patrón. Ver [Context Map](05-context-map.md), [reglas](06-reglas-invariantes.md) y [ADR](../decisiones/0004-hotspots-y-decisiones-pendientes.md).
