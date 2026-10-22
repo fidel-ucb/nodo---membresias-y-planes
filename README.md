@@ -40,4 +40,6 @@ Las líneas representan relaciones sin dirección ni patrón de integración; la
 
 ## Evidencia y cautelas
 
-Los documentos originales utilizados durante el análisis no se incluyen en este repositorio. La trazabilidad conserva referencias internas a secciones y páginas, distingue los hechos resumidos de las hipótesis y señala dónde no es posible comprobar la procedencia primaria. Las nueve figuras PNG disponibles se conservan sin recrear diagramas.
+Los materiales originales del curso y las entrevistas utilizadas durante el análisis no se adjuntan a este repositorio. La documentación conserva relaciones entre reglas de negocio, invariantes, políticas, decisiones, riesgos y hotspots mediante sus identificadores y los enlaces entre artefactos. Cuando la procedencia concreta de una regla necesita verificarse con el equipo, se indica expresamente.
+
+Las nueve figuras del análisis estratégico se conservan en docs/figuras/.
