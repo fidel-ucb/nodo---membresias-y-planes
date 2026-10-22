@@ -1,29 +1,46 @@
-# ADR 0004 · Hotspots y decisiones pendientes
+# ADR 0004 — Gestión de hotspots y decisiones pendientes
+
+**Estado:** Aceptada como criterio de trabajo; cuestiones pendientes de validación  
+**Etapa:** Diseño estratégico — Sesión 3  
+**Decisión relacionada:** DD-10
 
 ## Contexto
 
-El análisis estratégico documenta reglas y propuestas, pero también incertidumbres que afectan condiciones, saldo y fronteras (§§5–9, pp. 46–51, 63–67, 79–89).
+Al analizar la contratación, los beneficios y los impagos de las membresías de Nodo encontramos reglas conocidas, pero también preguntas que el caso y las entrevistas disponibles todavía no resuelven.
+
+Estas dudas afectan decisiones importantes: cuándo se consumen las horas de sala, qué puede hacer un miembro durante un impago y cómo se aplican los cambios de plan a contratos vigentes. Resolverlas por suposición podría producir un modelo incorrecto o establecer fronteras de responsabilidad sin suficiente evidencia.
 
 ## Decisión
 
-Conservar H-01–H-12 y R-01–R-10 como preguntas y riesgos; no completarlos por inferencia. Posponer patrones de integración y modelo táctico (DD-10).
+**Mantener explícitos los hotspots H-01 a H-12 y los riesgos R-01 a R-10**, sin presentar como confirmadas las respuestas que aún no ha dado el experto.
 
-## Evidencia
+Distinguir en la documentación entre **reglas confirmadas**, **hipótesis del equipo** y **preguntas abiertas**. Posponer la elección de patrones de integración y el diseño táctico hasta las sesiones correspondientes.
 
-Prioridad alta en la fuente: activación/gracia/suspensión/recuperación (H-01, H-08–H-10), consumo/restitución/concurrencia (H-04, H-05, H-12) y cambio de oferta con contratos (H-03). Prioridad media: H-06, H-07, H-11 y H-02. Ver [08-hotspots-riesgos.md](../docs/08-hotspots-riesgos.md).
+## Justificación
 
-## Alternativas descartadas
+Las incertidumbres identificadas pueden modificar el comportamiento del negocio y sus fronteras:
 
-Tratar cinco días de impago como universal; deducir consumo a partir de reserva; presumir reembolso/restauración de horas; inferir titularidad de equipo o seleccionar ACL, Customer/Supplier, OHS u otro patrón antes de Sesión 4.
+- **Impagos y acceso (H-01, H-08 a H-10):** el caso describe una suspensión del acceso tras cinco días de impago en una renovación mensual. No podemos asumir que el plazo o sus consecuencias sean iguales para todas las modalidades, ni que «membresía vigente», «pago al día» y «acceso habilitado» signifiquen lo mismo.
+- **Consumo de beneficios (H-04, H-05 y H-12):** confirmar una reserva no aclara por sí solo cuándo se descuentan las horas, cuándo se restituyen ni qué ocurre si dos reservas utilizan simultáneamente las últimas horas disponibles.
+- **Cambios comerciales (H-03):** falta precisar qué sucede con las membresías existentes cuando Nodo modifica las condiciones de un plan.
+- **Casos particulares (H-02, H-06, H-07 y H-11):** siguen abiertas las reglas sobre cambios múltiples, caducidad de horas, planes de equipo y asignación de escritorios dedicados.
+
+Los riesgos R-01 a R-10 describen **consecuencias posibles** de no resolver estas cuestiones; no son fallos observados del sistema.
+
+## Alternativas no adoptadas
+
+- **Completar las reglas mediante suposiciones:** daría una falsa sensación de certeza y podría contradecir al experto.
+- **Decidir ahora mecanismos de integración o estructuras de código:** adelantaría decisiones propias de las Sesiones 4 a 6 sin contar con los acuerdos de negocio necesarios.
 
 ## Consecuencias
 
-Las reglas presentadas como confirmadas se conservan como fueron descritas; su procedencia primaria no puede verificarse con los materiales incluidos aquí. Las formulaciones de equipo siguen siendo provisionales; revisar glosario, EventStorming, Domain Stories, mapa e invariantes cuando haya respuestas.
+- Cada hotspot conservará su pregunta, prioridad y relación con el proceso afectado.
+- Las hipótesis permanecerán identificadas como tales, y las reglas consideradas confirmadas deberán vincularse con su fuente.
+- Cuando exista una respuesta validada, se actualizarán los artefactos afectados: glosario, EventStorming, Domain Storytelling, Context Map y reglas e invariantes.
+- La selección de patrones entre contextos queda para la **Sesión 4**; el modelo táctico y su implementación, para las **Sesiones 5 y 6**.
 
-## Estado
+## Revisión pendiente
 
-DD-10 aceptada como límite de alcance. Hotspots pendientes de validación; riesgos expresan consecuencias posibles, no hechos.
+La validación priorizará las cuestiones de **impago y acceso**, **consumo y restitución de horas** y **cambios de planes con contratos vigentes**. También debe aclararse si Membresías necesita una relación directa con Tarifas y si los beneficios de membresía se aplican a Eventos.
 
-## Hotspots
-
-H-01–H-12, con preguntas complementarias sin código sobre cancelar una solicitud, Tarifas y Eventos; R-01–R-10.
+**Referencia de respaldo:** análisis estratégico de Nodo, apartados 5 a 9; [08-hotspots-riesgos.md](../docs/08-hotspots-riesgos.md).

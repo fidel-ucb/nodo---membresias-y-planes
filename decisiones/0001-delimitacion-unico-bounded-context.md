@@ -1,30 +1,48 @@
-# ADR 0001 · Delimitación de un único Bounded Context
+# ADR 0001 — Un único Bounded Context para Membresías y Planes
+
+**Estado:** Aceptada provisionalmente  
+**Etapa:** Diseño estratégico — Sesión 3  
+**Decisiones relacionadas:** DD-02 y DD-03
 
 ## Contexto
 
-Se evaluaron límites dentro del subdominio Membresías y Planes con señales de lenguaje, reglas, actores, EventStorming y Domain Storytelling (análisis estratégico, §3, pp. 11–18; criterio de nivel Alto, p. 1).
+En Nodo identificamos tres capacidades dentro del subdominio **Membresías y Planes**:
+
+- **Catálogo de Planes:** define las modalidades ofrecidas y sus beneficios.
+- **Gestión de Membresías:** administra las contrataciones, renovaciones, cambios y cancelaciones.
+- **Administración de Beneficios:** mantiene los derechos de uso y saldos de horas de cada membresía.
+
+Debíamos decidir si estas capacidades requerían modelos separados (*Bounded Contexts*) o si podían compartir uno. Una división funcional no implica, por sí sola, una frontera de modelo.
 
 ## Decisión
 
-Mantener provisionalmente un único BC `Membresías y Planes`, con Catálogo de Planes, Gestión de Membresías y Administración de Beneficios como capacidades internas. Corresponde a DD-02 y DD-03.
+Mantener **un único Bounded Context, `Membresías y Planes`**, con las tres capacidades anteriores organizadas internamente, pero **sin tratarlas como contextos independientes**.
 
-## Evidencia
+## Justificación
 
-Oferta, condiciones contratadas y derechos mantienen relaciones de dominio; no se demostró independencia suficiente de lenguaje, reglas, actores o evolución. Fronteras externas de reservas, cobros y acceso están mejor respaldadas. Figuras 2–8, escenarios DS y preguntas H-03/H-06/H-07 complementan la evidencia.
+Las capacidades comparten un modelo coherente de **oferta comercial → condiciones contratadas → derechos adquiridos**. Por ejemplo, el Catálogo define las horas incluidas de un plan; Gestión de Membresías establece qué condiciones contrató un miembro; y Administración de Beneficios controla las horas que le corresponden y su utilización.
 
-## Alternativas descartadas
+Contrastamos la separación mediante lenguaje ubicuo, independencia de reglas, responsables, EventStorming y Domain Storytelling. Aunque encontramos responsabilidades distintas, **no hay evidencia suficiente de modelos internos incompatibles o autónomos**.
 
-- Dos BC: Catálogo de Planes y Gestión de Membresías. No se adopta por falta de evidencia de autonomía; H-03 puede hacer revisar esta alternativa.
-- Tres BC: Catálogo, Membresías y Beneficios. No se adopta porque añadiría límites a procesos relacionados sin prueba de modelos independientes.
+En cambio, sí aparecen fronteras externas más claras: **Reservas** decide la ocupación de salas; **Facturación** gestiona obligaciones y pagos; y **Control de Acceso** administra el ingreso físico. Membresías conserva las condiciones contractuales y los beneficios.
+
+## Alternativas no adoptadas
+
+- **Dos contextos (Catálogo / Membresías y Beneficios):** permitirían separar la oferta de los contratos, pero todavía no se ha demostrado que necesiten modelos independientes.
+- **Tres contextos (Catálogo / Membresías / Beneficios):** añadirían fronteras y coordinación sin evidencia suficiente que lo justifique.
 
 ## Consecuencias
 
-Las tres capacidades se documentan bajo una frontera única; no se crearán carpetas raíz separadas. Reexaminar si las respuestas a hotspots muestran reglas, vocabulario o responsabilidades que evolucionan independientemente.
+- El Context Map representará **un único BC central** con tres capacidades internas.
+- El repositorio tendrá **una carpeta de Bounded Context**, no tres contextos separados.
+- Las capacidades podrán organizarse en módulos internos cuando corresponda; esta decisión **no define aún clases, aggregates ni servicios**.
 
-## Estado
+## Hotspots y revisión
 
-Aceptada provisionalmente hasta Sesión 3; DD-02 y DD-03 son hipótesis explícitas, sujetas a nueva evidencia.
+La decisión se revisará si la validación con el experto demuestra autonomía real de reglas, lenguaje o responsabilidades, especialmente en:
 
-## Hotspots
+- **H-03:** efecto de modificar planes sobre membresías ya contratadas.
+- **H-06:** consumo y caducidad de horas acumuladas.
+- **H-07:** titularidad y distribución de beneficios en planes de equipo.
 
-H-03 (cambio de plan con contratos vigentes), H-06 (caducidad), H-07 (equipo), además de escenarios de [07-bounded-context.md](../docs/07-bounded-context.md).
+**Referencia de respaldo:** análisis estratégico de Nodo, apartado 3. La clasificación del Core y las relaciones con otros contextos se documentan en ADR independientes.
