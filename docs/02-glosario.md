@@ -6,7 +6,7 @@ Este glosario pertenece al único BC candidato **Membresías y Planes**. Las tre
 
 | Término | Significado acordado | Qué NO es | Regla o invariante | Evento |
 |---|---|---|---|---|
-| Plan ofertado | Modalidad que describe condiciones y beneficios que Nodo ofrece. | Una membresía particular o consumo de un cliente. | Define condiciones generales; cambios del catálogo no se propagan automáticamente a contratos existentes (**H-03**). | Plan definido (candidato). |
+| Plan ofertado | Modalidad que describe condiciones y beneficios que Nodo ofrece. | Una membresía particular o consumo de un cliente. | Define las condiciones generales de la oferta. Está pendiente determinar si las modificaciones del catálogo afectan a las membresías existentes o únicamente a nuevas contrataciones y renovaciones (H-03). | Plan definido (candidato). |
 | Modalidad de plan | Tipo disponible: pase diario, mensual flexible, escritorio dedicado o equipo. | Estado de una membresía. | Las modalidades difieren en ciclo, puesto, horario y horas incluidas. | Plan definido (candidato). |
 | Pase diario | Modalidad contratada por un día. | Plan mensual. | No se le extiende el compromiso mínimo de 30 días del plan mensual. | Pase diario contratado (candidato). |
 | Plan mensual flexible | Modalidad mensual asociada a puestos flexibles y beneficios definidos por Nodo. | Asignación necesaria de un escritorio fijo. | Compromiso mínimo mensual de 30 días según la fuente; confirmar procedencia primaria. | Plan mensual contratado (candidato). |
