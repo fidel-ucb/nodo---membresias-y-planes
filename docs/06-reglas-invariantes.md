@@ -38,6 +38,13 @@ La ocupación es responsabilidad de Reservas; importes, de Tarifas; cobros/pagos
 
 El documento considera RN/INV-01, 03, 04 y 05 derivadas de reglas documentadas, aunque los detalles necesitan validación. INV-02, 06 y 07 requieren contraste. **No** se afirma que el saldo nunca sea negativo: el tratamiento de consumo adicional no está decidido. Tampoco son invariantes de este BC que toda factura esté pagada o que todo ingreso esté autorizado.
 
+## Invariantes prioritarias para el diseño táctico posterior
+De cara a la Sesión 5, se identifican como candidatas prioritarias la unicidad de membresía activa (INV-01), la aplicación de cambios de plan en el ciclo correspondiente (INV-03), la caducidad de horas acumuladas (INV-05) y la prevención del reconocimiento duplicado de consumos (INV-06).
+
+Estas condiciones representan aspectos relevantes de la consistencia del modelo de contratación y beneficios. INV-06 requiere especial validación porque el momento del consumo y el tratamiento de reservas concurrentes permanecen abiertos.
+
+Esta priorización orienta el futuro diseño táctico, pero no determina todavía aggregates, entidades, transacciones ni mecanismos de implementación.
+
 ## POL-01–POL-09 · Políticas
 
 | Código | Acontecimiento / condición | Reacción | Estado |
