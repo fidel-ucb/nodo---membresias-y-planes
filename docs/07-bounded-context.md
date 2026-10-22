@@ -42,4 +42,4 @@ Casos de revisión: modificar plan con membresías vigentes; plan de equipo con 
 
 ## Estado
 
-La decisión es estratégica hasta Sesión 3. Los vecinos siguen siendo candidatos para validación por sus equipos; no se fijan patrones de integración ni diseño táctico. Límites de evidencia y trazabilidad: [09-trazabilidad.md](09-trazabilidad.md) y ADR [0001](../decisiones/0001-delimitacion-unico-bounded-context.md).
+La decisión es estratégica hasta Sesión 3. Los vecinos siguen siendo candidatos para validación por sus equipos; no se fijan patrones de integración ni diseño táctico. La evidencia primaria no está disponible en este repositorio; véase el ADR [0001](../decisiones/0001-delimitacion-unico-bounded-context.md).

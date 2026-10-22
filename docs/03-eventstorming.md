@@ -78,4 +78,4 @@ El caso de cinco días se limita a la renovación mensual descrita. No se equipa
 | Beneficios | Beneficios del plan; saldo separado por período; reservas relevantes; consumo reconocido; fechas de caducidad; descuento/precio/cargo diferenciados. |
 | Impago/acceso | Estado de obligación externa; vigencia y condiciones; derechos durante gracia; condición de suspensión; autorización operativa externa. |
 
-Las secuencias y nombres no confirmados son candidatos de modelado. La evidencia primaria no está disponible en este repositorio; sus límites y la procedencia registrada se explican en [09-trazabilidad.md](09-trazabilidad.md). No se definen contratos, eventos de integración ni patrones de Sesión 4.
+Las secuencias y nombres no confirmados son candidatos de modelado. La evidencia primaria no está disponible en este repositorio y esa incertidumbre se mantiene explícita. No se definen contratos, eventos de integración ni patrones de Sesión 4.

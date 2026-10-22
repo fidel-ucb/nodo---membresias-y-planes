@@ -20,7 +20,6 @@ El trabajo corresponde al diseño estratégico hasta la Sesión 3. Membresías y
 | [Reglas e invariantes](docs/06-reglas-invariantes.md) | RN-01–RN-15, INV-01–INV-07 y POL-01–POL-09 |
 | [Bounded Context](docs/07-bounded-context.md) | Señales, alternativas y justificación del único BC |
 | [Hotspots y riesgos](docs/08-hotspots-riesgos.md) | H-01–H-12, R-01–R-10 y preguntas para Sesión 4 |
-| [Trazabilidad](docs/09-trazabilidad.md) | Reglas y decisiones enlazadas con fuente, escenarios y límites |
 | [Esqueleto conceptual](src/membresias-y-planes/README.md) | Frontera y vocabulario, sin implementación |
 | Decisión de un BC | [ADR 0001](decisiones/0001-delimitacion-unico-bounded-context.md) |
 | Core frente a Supporting | [ADR 0002](decisiones/0002-core-vs-supporting.md) |

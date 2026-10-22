@@ -63,4 +63,4 @@ El documento considera RN/INV-01, 03, 04 y 05 derivadas de reglas documentadas, 
 | Reserva cancelada tarde / uso próximo a caducar / concurrencia | RN-09, RN-11, INV-05–INV-07, POL-04–POL-05, H-04–H-06, H-12 |
 | Impago dentro de gracia y recuperación | RN-12–RN-15, POL-06–POL-07, H-01, H-08–H-10 |
 
-La trazabilidad de procedencia, especialmente donde falta evidencia primaria verificable, está en [09-trazabilidad.md](09-trazabilidad.md). Los hotspots y los riesgos están en [08-hotspots-riesgos.md](08-hotspots-riesgos.md).
+La procedencia de las reglas cuya evidencia primaria no está disponible debe verificarse con el equipo. Los hotspots y los riesgos están en [08-hotspots-riesgos.md](08-hotspots-riesgos.md).
